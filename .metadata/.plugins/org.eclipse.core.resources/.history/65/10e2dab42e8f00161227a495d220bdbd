@@ -1,0 +1,32 @@
+package group01;
+
+import java.awt.Point;
+import java.util.ArrayList;		// ArrayList
+import java.util.TreeMap;		// Binary Search Tree
+import java.util.PriorityQueue; // Heap
+
+public class ConvexHull {
+	public ArrayList<Point> calculateConvexHull(ArrayList<Point> points) {
+		ArrayList<Point> convexHull = new ArrayList<Point>();
+		
+		// TODO: Calculate convex hull.
+		
+		return convexHull;
+	}
+	
+	public TreeMap calculateConvexHull(ArrayList<Point> points) {
+		TreeMap convexHull = new TreeMap();
+		
+		// TODO: Calculate convex hull.
+		
+		return convexHull;
+	}
+	
+	public ArrayList<Point> calculateConvexHull(ArrayList<Point> points) {
+		ArrayList<Point> convexHull = new ArrayList<Point>();
+		
+		// TODO: Calculate convex hull.
+		
+		return convexHull;
+	}
+}

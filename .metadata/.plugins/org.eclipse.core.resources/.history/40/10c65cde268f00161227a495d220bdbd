@@ -1,0 +1,8 @@
+
+import java.util.Scanner;
+import java.awt.Point;
+
+public class DynamicConvexHull {
+	public static void main(String[] args) {
+	}
+}

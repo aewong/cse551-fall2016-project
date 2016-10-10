@@ -1,0 +1,34 @@
+package group01;
+
+import java.awt.Point;
+import java.util.ArrayList;		// ArrayList
+import java.util.TreeMap;		// Binary Search Tree
+import java.util.PriorityQueue; // Heap
+
+public class DynamicConvexHull {
+	public static void main(String[] args) {
+		PointReader pr = new PointReader();
+		ConvexHullCalculator chc = new ConvexHullCalculator();
+		ConvexHullDrawer chd = new ConvexHullDrawer();
+		
+		ArrayList<Point> points = pr.readPoints();
+		
+		// Array implementation
+		ArrayList<Point> chArray = chc.calculateConvexHullWithArray(points);
+		chd.draw(chArray);
+		
+		// Binary search tree implementation
+		TreeMap chTree = chc.calculateConvexHullWithTree(points);
+
+		// TODO: Calculate convex hull.
+		
+		chd.draw(chTree);
+		
+		// Heap implementation
+		PriorityQueue<Point> chHeap = new PriorityQueue<Point>();
+
+		// TODO: Calculate convex hull.
+		
+		chd.draw(chHeap);
+	}
+}

@@ -1,0 +1,12 @@
+1476132092007	Move compilation unit
+1476133619329	Rename type 'DrawConvexHull'
+1476133643473	Rename type 'Draw'
+1476133900964	Rename type 'DrawConvexHull'
+1476134187454	Rename type 'ConvexHull'
+1476134338659	Rename method 'calculateConvexHullWithArray'
+1476134422225	Rename type 'ConvexHullCalculator'
+1476134463509	Rename local variable 'chc'
+1476134472682	Rename local variable 'convexHull'
+1476134499238	Rename type 'ConvexHullDrawer'
+1476134508552	Rename local variable 'chd'
+1476134853494	Delete elements

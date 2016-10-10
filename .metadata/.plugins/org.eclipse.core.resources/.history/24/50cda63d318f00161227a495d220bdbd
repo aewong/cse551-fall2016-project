@@ -1,0 +1,28 @@
+package group01;
+
+import java.awt.Point;
+import java.util.ArrayList;		// ArrayList
+
+public class ConvexHullArray {
+	ArrayList<Point> points;
+	ArrayList<Point> chPoints;
+	
+	ConvexHullArray(ArrayList<Point> points) {
+		this.points = points;
+		this.chPoints = new ArrayList<Point>();
+		
+		calculateConvexHull();
+	}
+	
+	private void calculateConvexHull() {
+		// TODO: Calculate convex hull.
+	}
+	
+	public ArrayList<Point> getCHPoints() {
+		return chPoints;
+	}
+	
+	public void addPoint(Point p) {
+		
+	}
+}
