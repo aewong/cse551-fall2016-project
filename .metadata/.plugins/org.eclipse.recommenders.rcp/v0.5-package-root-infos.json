@@ -13,6 +13,32 @@
     "javaRuntime": true
   },
   {
+    "symbolicName": "org.jfree.jcommon",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 23,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a316f336ca996e0c6bec4e4fbd49be8f5e1c3968",
+    "jarFileModificationDate": "2016-10-20T13:09:35.286-07:00",
+    "location": "C:\\Users\\WHO\\Desktop\\SCHOOL\\CSE 551\\Project\\cse551-fall2016-project\\Dynamic Convex Hull\\lib\\jcommon-1.0.23.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jfreechart-1.0.19",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5d33a639b2083c9a3ca19d89db6f5ad6007a0113",
+    "jarFileModificationDate": "2016-10-20T13:09:39.629-07:00",
+    "location": "C:\\Users\\WHO\\Downloads\\jfreechart-1.0.19\\jfreechart-1.0.19\\lib\\jfreechart-1.0.19.jar",
+    "javaRuntime": false
+  },
+  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -89,6 +115,32 @@
     "jarFileModificationDate": "2012-08-25T13:55:08.497-07:00",
     "location": "C:\\Java\\jdk1.7.0_06\\jre\\lib\\jce.jar",
     "javaRuntime": true
+  },
+  {
+    "symbolicName": "jfreechart-1.0.19",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5d33a639b2083c9a3ca19d89db6f5ad6007a0113",
+    "jarFileModificationDate": "2016-10-20T13:09:39.629-07:00",
+    "location": "C:\\Users\\WHO\\Desktop\\SCHOOL\\CSE 551\\Project\\cse551-fall2016-project\\Dynamic Convex Hull\\lib\\jfreechart-1.0.19.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jfree.jcommon",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 23,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a316f336ca996e0c6bec4e4fbd49be8f5e1c3968",
+    "jarFileModificationDate": "2016-10-20T13:09:35.286-07:00",
+    "location": "C:\\Users\\WHO\\Downloads\\jfreechart-1.0.19\\jfreechart-1.0.19\\lib\\jcommon-1.0.23.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jre",

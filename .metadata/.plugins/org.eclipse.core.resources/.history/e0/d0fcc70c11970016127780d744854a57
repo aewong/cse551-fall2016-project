@@ -1,0 +1,149 @@
+package group01;
+
+import java.awt.geom.Point2D;
+import java.util.ArrayList;
+import java.util.PriorityQueue;
+import java.util.TreeMap;
+import java.awt.Color; 
+import java.io.IOException;
+
+import org.jfree.chart.ChartPanel; 
+import org.jfree.chart.JFreeChart; 
+import org.jfree.data.xy.XYDataset; 
+import org.jfree.data.xy.XYSeries; 
+import org.jfree.ui.ApplicationFrame; 
+import org.jfree.chart.plot.XYPlot; 
+import org.jfree.chart.ChartFactory; 
+import org.jfree.chart.plot.PlotOrientation; 
+import org.jfree.data.xy.XYSeriesCollection; 
+import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+
+public class XYPlotter extends ApplicationFrame {
+	private static final long serialVersionUID = 1L;
+	
+	public XYPlotter(String chartTitle, ArrayList<Point2D> points, ArrayList<Point2D> chPoints) {
+		super("Dynamic Convex Hull");
+		
+		JFreeChart chart = ChartFactory.createXYLineChart(chartTitle, null, null, createDataset(points, chPoints), PlotOrientation.VERTICAL, true, true, false);
+		
+		ChartPanel chartPanel = new ChartPanel(chart);
+		chartPanel.setPreferredSize(new java.awt.Dimension(560, 367));
+		
+		XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
+		renderer.setSeriesLinesVisible(0, false);
+		renderer.setSeriesPaint(0, Color.BLUE);
+		renderer.setSeriesPaint(1, Color.RED);
+		
+		final XYPlot plot = chart.getXYPlot();
+		plot.setRenderer(renderer);
+		
+		setContentPane(chartPanel);
+	}
+	
+	public XYPlotter(String chartTitle, ArrayList<Point2D> points, TreeMap chPoints) {
+		super("Dynamic Convex Hull");
+		
+		JFreeChart chart = ChartFactory.createXYLineChart(chartTitle, null, null, createDataset(points, chPoints), PlotOrientation.VERTICAL, true, true, false);
+		
+		ChartPanel chartPanel = new ChartPanel(chart);
+		chartPanel.setPreferredSize(new java.awt.Dimension(560, 367));
+		
+		XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
+		renderer.setSeriesLinesVisible(0, false);
+		renderer.setSeriesPaint(0, Color.BLUE);
+		renderer.setSeriesPaint(1, Color.RED);
+		
+		final XYPlot plot = chart.getXYPlot();
+		plot.setRenderer(renderer);
+		
+		setContentPane(chartPanel);
+	}
+	
+	public XYPlotter(String chartTitle, ArrayList<Point2D> points, PriorityQueue<Point2D> chPoints) {
+		super("Dynamic Convex Hull");
+		
+		JFreeChart chart = ChartFactory.createXYLineChart(chartTitle, null, null, createDataset(points, chPoints), PlotOrientation.VERTICAL, true, true, false);
+		
+		ChartPanel chartPanel = new ChartPanel(chart);
+		chartPanel.setPreferredSize(new java.awt.Dimension(560, 367));
+		
+		XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
+		renderer.setSeriesLinesVisible(0, false);
+		renderer.setSeriesPaint(0, Color.BLUE);
+		renderer.setSeriesPaint(1, Color.RED);
+		
+		final XYPlot plot = chart.getXYPlot();
+		plot.setRenderer(renderer);
+		
+		setContentPane(chartPanel);
+	}
+	
+	private XYSeries createInitialSeries(ArrayList<Point2D> points) {
+		XYSeries series = new XYSeries("Points");
+		
+		for (Point2D point : points) {
+			series.add(point.getX(), point.getY());
+		}
+
+		return series;
+	}
+	
+	private XYDataset createDataset(ArrayList<Point2D> points, ArrayList<Point2D> chPoints) {
+		XYSeriesCollection dataset = new XYSeriesCollection();
+		dataset.addSeries(createInitialSeries(points));
+		
+		XYSeries s2 = createFinalSeries();
+		
+//		XYSeries s2 = new XYSeries("Convex Hull", false);
+//		
+//		for (Point2D point : chPoints) {
+//			s2.add(point.getX(), point.getY());
+//		}
+		
+		dataset.addSeries(s2);
+		
+		return dataset;
+	}
+	
+	private XYDataset createDataset(ArrayList<Point2D> points, TreeMap chPoints) {
+		XYSeriesCollection dataset = new XYSeriesCollection();
+		dataset.addSeries(createInitialSeries(points));
+		
+		XYSeries s2 = createFinalSeries();
+		
+		XYSeries s2 = new XYSeries("Convex Hull", false);
+		
+		// TODO: Create XYSeries for chPoints
+		
+		dataset.addSeries(s2);
+		
+		return dataset;
+	}
+	
+	private XYDataset createDataset(ArrayList<Point2D> points, PriorityQueue<Point2D> chPoints) {
+		XYSeriesCollection dataset = new XYSeriesCollection();
+		dataset.addSeries(createInitialSeries(points));
+		
+		XYSeries s2 = new XYSeries("Convex Hull", false);
+		
+		// TODO: Create XYSeries for chPoints
+		
+		dataset.addSeries(s2);
+		
+		return dataset;
+	}
+	
+	// NOTE: This function simply creates an XYSeries from ConvexHullResult.csv. It is used to test XYPlotter functions.
+	private XYSeries createFinalSeries() throws IOException {
+		XYSeries series = new XYSeries("Convex Hull", false);
+		
+		PointReader pr = new PointReader();
+		ArrayList<Point2D> points = pr.readPoints("ConvexHullResult.csv");
+		
+		for (Point2D point : points) {
+			series.add(point.getX(), point.getY());
+		}
+
+		return series;
+	}
+}

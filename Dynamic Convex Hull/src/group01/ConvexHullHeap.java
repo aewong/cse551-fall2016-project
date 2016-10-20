@@ -4,6 +4,8 @@ import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
+import org.jfree.ui.RefineryUtilities;
+
 public class ConvexHullHeap {
 	private ArrayList<Point2D> points;
 	private PriorityQueue<Point2D> chPoints;
@@ -29,5 +31,9 @@ public class ConvexHullHeap {
 	
 	public void drawConvexHull() {
 		// TODO: Draw convex hull.
+		XYPlotter chart = new XYPlotter("Heap", points, chPoints);
+	    chart.pack();          
+	    RefineryUtilities.centerFrameOnScreen(chart);          
+	    chart.setVisible(true);
 	}
 }

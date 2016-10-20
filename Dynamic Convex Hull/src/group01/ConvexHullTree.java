@@ -4,6 +4,8 @@ import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.TreeMap;
 
+import org.jfree.ui.RefineryUtilities;
+
 public class ConvexHullTree {
 	private ArrayList<Point2D> points;
 	private TreeMap chPoints;
@@ -29,5 +31,9 @@ public class ConvexHullTree {
 	
 	public void drawConvexHull() {
 		// TODO: Draw convex hull.
+		XYPlotter chart = new XYPlotter("Binary Search Tree", points, chPoints);
+	    chart.pack();          
+	    RefineryUtilities.centerFrameOnScreen(chart);          
+	    chart.setVisible(true);
 	}
 }

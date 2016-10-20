@@ -8,5 +8,15 @@
     "coordinate": "jre:jre:zip:call:1.0.0",
     "location": "C:\\Java\\jdk1.7.0_06\\jre\\lib\\rt.jar",
     "status": "RESOLVED"
+  },
+  "C:\\Users\\WHO\\Downloads\\jfreechart-1.0.19\\jfreechart-1.0.19\\lib\\jfreechart-1.0.19.jar": {
+    "location": "C:\\Users\\WHO\\Downloads\\jfreechart-1.0.19\\jfreechart-1.0.19\\lib\\jfreechart-1.0.19.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027C:\\Users\\WHO\\Downloads\\jfreechart-1.0.19\\jfreechart-1.0.19\\lib\\jfreechart-1.0.19.jar\u0027. Neither fingerprint \u00275d33a639b2083c9a3ca19d89db6f5ad6007a0113\u0027 nor symbolic name \u0027jfreechart-1.0.19\u0027 are known."
+  },
+  "C:\\Users\\WHO\\Downloads\\jfreechart-1.0.19\\jfreechart-1.0.19\\lib\\jcommon-1.0.23.jar": {
+    "location": "C:\\Users\\WHO\\Downloads\\jfreechart-1.0.19\\jfreechart-1.0.19\\lib\\jcommon-1.0.23.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027C:\\Users\\WHO\\Downloads\\jfreechart-1.0.19\\jfreechart-1.0.19\\lib\\jcommon-1.0.23.jar\u0027. Neither fingerprint \u0027a316f336ca996e0c6bec4e4fbd49be8f5e1c3968\u0027 nor symbolic name \u0027org.jfree.jcommon\u0027 are known."
   }
 }

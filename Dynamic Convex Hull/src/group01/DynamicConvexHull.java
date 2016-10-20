@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class DynamicConvexHull {
 	public static void main(String[] args) throws IOException {
 		PointReader pr = new PointReader();
-		ArrayList<Point2D> points = pr.readPoints();
+		ArrayList<Point2D> points = pr.readPoints("ConvexHullTestData.csv");
 		
 		// Array implementation
 		ConvexHullArray chArray = new ConvexHullArray(points);

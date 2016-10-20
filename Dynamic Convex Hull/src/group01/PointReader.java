@@ -7,10 +7,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class PointReader {
-	public ArrayList<Point2D> readPoints() throws IOException {
+	public ArrayList<Point2D> readPoints(String fileName) throws IOException {
 		ArrayList<Point2D> points = new ArrayList<Point2D>();
 
-		BufferedReader br = new BufferedReader(new FileReader("ConvexHullTestData.csv"));
+		BufferedReader br = new BufferedReader(new FileReader(fileName));
 		String line = null;
 		
 		while ((line = br.readLine()) != null) {
@@ -28,7 +28,10 @@ public class PointReader {
 		
 		br.close();
 		
-//		printPoints(points);
+		// NOTE: Printing is for testing purposes only.
+		System.out.println(fileName);
+		printPoints(points);
+		System.out.println("");
 		
 		return points;
 	}

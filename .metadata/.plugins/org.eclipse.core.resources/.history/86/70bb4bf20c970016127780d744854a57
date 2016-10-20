@@ -1,0 +1,38 @@
+package group01;
+
+import java.awt.geom.Point2D;
+import java.util.ArrayList;
+
+import org.jfree.ui.RefineryUtilities;
+
+public class ConvexHullArray {
+	private ArrayList<Point2D> points;
+	private ArrayList<Point2D> chPoints;
+	
+	ConvexHullArray(ArrayList<Point2D> points) {
+		this.points = points;
+		this.chPoints = new ArrayList<Point2D>();
+		
+		calculateConvexHull();
+	}
+	
+	private void calculateConvexHull() {
+		// TODO: Calculate convex hull.
+	}
+	
+	public void addPoint(Point2D p) {
+		// TODO: Add point and recalculate convex hull.
+	}
+	
+	public void removePoint(Point2D p) {
+		// TODO: Remove point and recalculate convex hull.
+	}
+	
+	public void drawConvexHull() {
+		// TODO: Draw convex hull.
+		XYPlotter chart = new XYPlotter("Array List");
+	    chart.pack();          
+	    RefineryUtilities.centerFrameOnScreen(chart);          
+	    chart.setVisible(true);
+	}
+}

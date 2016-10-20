@@ -3,6 +3,8 @@ package group01;
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 
+import org.jfree.ui.RefineryUtilities;
+
 public class ConvexHullArray {
 	private ArrayList<Point2D> points;
 	private ArrayList<Point2D> chPoints;
@@ -28,5 +30,9 @@ public class ConvexHullArray {
 	
 	public void drawConvexHull() {
 		// TODO: Draw convex hull.
+		XYPlotter chart = new XYPlotter("Array List", points, chPoints);
+	    chart.pack();          
+	    RefineryUtilities.centerFrameOnScreen(chart);
+	    chart.setVisible(true);
 	}
 }
