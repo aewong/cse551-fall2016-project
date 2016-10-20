@@ -1,0 +1,12 @@
+{
+  "C:\\Users\\WHO\\Desktop\\SCHOOL\\CSE 551\\Project\\cse551-fall2016-project\\Dynamic Convex Hull\\src": {
+    "location": "C:\\Users\\WHO\\Desktop\\SCHOOL\\CSE 551\\Project\\cse551-fall2016-project\\Dynamic Convex Hull\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\WHO\\Desktop\\SCHOOL\\CSE 551\\Project\\cse551-fall2016-project\\Dynamic Convex Hull\\src\u0027. Skipped."
+  },
+  "C:\\Java\\jdk1.7.0_06\\jre\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Java\\jdk1.7.0_06\\jre\\lib\\rt.jar",
+    "status": "RESOLVED"
+  }
+}

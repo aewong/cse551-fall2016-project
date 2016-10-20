@@ -1,15 +1,15 @@
 package group01;
 
-import java.awt.Point;
+import java.awt.geom.Point2D;
 import java.util.ArrayList;
 
 public class ConvexHullArray {
-	private ArrayList<Point> points;
-	private ArrayList<Point> chPoints;
+	private ArrayList<Point2D> points;
+	private ArrayList<Point2D> chPoints;
 	
-	ConvexHullArray(ArrayList<Point> points) {
+	ConvexHullArray(ArrayList<Point2D> points) {
 		this.points = points;
-		this.chPoints = new ArrayList<Point>();
+		this.chPoints = new ArrayList<Point2D>();
 		
 		calculateConvexHull();
 	}
@@ -18,11 +18,11 @@ public class ConvexHullArray {
 		// TODO: Calculate convex hull.
 	}
 	
-	public void addPoint(Point p) {
+	public void addPoint(Point2D p) {
 		// TODO: Add point and recalculate convex hull.
 	}
 	
-	public void removePoint(Point p) {
+	public void removePoint(Point2D p) {
 		// TODO: Remove point and recalculate convex hull.
 	}
 	
