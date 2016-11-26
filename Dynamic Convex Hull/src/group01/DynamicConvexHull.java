@@ -8,23 +8,22 @@ public class DynamicConvexHull {
 	public static void main(String[] args) throws IOException {
 		PointReader pr = new PointReader();
 		ArrayList<Point2D> points = pr.readPoints("ConvexHullTestData.csv");
+		Point2D pchange = new Point2D.Double();
+		pchange.setLocation(3,15);
+		
 		
 		// Array implementation
 		ConvexHullArray chArray = new ConvexHullArray(points);
 		chArray.drawConvexHull();
-		// TODO: Add point and draw.
-		// TODO: Remove point and draw.
 		
-		// Binary search tree implementation
-		ConvexHullTree chTree = new ConvexHullTree(points);
-		chTree.drawConvexHull();
-		// TODO: Add point and draw.
-		// TODO: Remove point and draw.
+		//example of adding a point
+		//chArray.removePoint(pchange);
 		
-		// Heap implementation
-		ConvexHullHeap chHeap = new ConvexHullHeap(points);
-		chHeap.drawConvexHull();
-		// TODO: Add point and draw.
-		// TODO: Remove point and draw.
+	
+		
+
 	}
 }
+
+
+
